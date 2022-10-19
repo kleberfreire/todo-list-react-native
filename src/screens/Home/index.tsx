@@ -1,10 +1,16 @@
-import {Text, View} from 'react-native';
+import {View, Image} from 'react-native';
 import {styles} from './style';
+import {InputTodo} from '../../components/InputTodo';
 
 export function Home() {
   return (
     <View style={styles.container}>
-      <Text>Hello world!</Text>
+      <View style={styles.logoImgContainer}>
+        <Image source={require('../../assets/Logo.png')} />
+      </View>
+      <View style={styles.todoContainer}>
+        <InputTodo />
+      </View>
     </View>
   );
 }
