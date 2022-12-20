@@ -14,5 +14,6 @@ export const styles = StyleSheet.create({
   todoContainer: {
     backgroundColor: colors.gray600,
     height: '100%',
+    paddingHorizontal: 24,
   },
 });
